@@ -25,4 +25,29 @@ class PasswortValidiererTest {
         assertFalse(result);
     }
 
+    @Test
+    void checkDigitOrNot_ifYesTrue() {
+        //GIVEN
+        String passwort = "123HasanRockt";
+
+        //WHEN
+        boolean result = PasswortValidierer.checkDigitOrNot(passwort);
+
+        //THEN
+        assertTrue(result);
+    }
+
+    @Test
+    void checkDigitOrNot_ifNoFalse() {
+        //GIVEN
+        String passwort = "XinRocktYeah";
+
+        //WHEN
+        boolean result = PasswortValidierer.checkDigitOrNot(passwort);
+
+        //THEN
+        assertFalse(result);
+
+    }
+
 }
