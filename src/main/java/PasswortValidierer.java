@@ -63,10 +63,10 @@ public class PasswortValidierer {
 
     }
 
-//    public static boolean checkPasswordContainsOnlyDigit(String password){
-//        return password.matches("^\\d+$");
-//    }
-//
+    public static boolean checkPasswordContainsOnlyDigit(String password){
+        return password.matches("^\\d+$");
+    }
+
 
 
 }
