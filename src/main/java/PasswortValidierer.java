@@ -20,6 +20,12 @@ public class PasswortValidierer {
 
     }
 
+    public static boolean checkDigitOrNotV2(String passwort) {  //Hier noch einmal in einfacher, aber primitiver Form
+        if (passwort.contains("1") || passwort.contains("2") || passwort.contains("3") || passwort.contains("4") || passwort.contains("5") || passwort.contains("6") || passwort.contains("7") || passwort.contains("8") || passwort.contains("9") || passwort.contains("0")) {
+            return true;
+        } return false;
+    }
+
     public static boolean checkCamelCase(String passwort) {
         if (passwort.equals(passwort.toUpperCase()) || passwort.equals(passwort.toLowerCase())) {
             return false;
