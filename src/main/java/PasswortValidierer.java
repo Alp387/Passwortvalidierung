@@ -17,8 +17,20 @@ public class PasswortValidierer {
 
     public static boolean checkCamelCase(String passwort) {
         if (passwort.equals(passwort.toUpperCase()) || passwort.equals(passwort.toLowerCase())) {
+            return false;
         }
-        return false;
+        return true; //hier kein else einfach un platz zu sparen
+
+    }
+
+    public static boolean checkCamelCaseV1_2(String passwort) {
+        if (passwort.equals((passwort.toUpperCase()))){
+            return false;
+        }
+        if (passwort.equals(passwort.toLowerCase())){
+            return false;
+        }
+        return true;  //das else { return true; } können wir uns hier Sparen und return true direkt ausgeben.
     }
 }
 

@@ -51,7 +51,7 @@ class PasswortValidiererTest {
     }
 
     @Test
-    void checkCamelCase() {
+    void checkCamelCaseUp() {
         //GIVEN
         String passwort = "AAAA";
 
@@ -60,6 +60,66 @@ class PasswortValidiererTest {
 
         //THEN
         assertFalse(result);
+    }
+
+    @Test
+    void checkCamelCaseLow() {
+        //GIVEN
+        String passwort = "aaaa";
+
+        //WHEN
+        boolean result = PasswortValidierer.checkCamelCase(passwort);
+
+        //THEN
+        assertFalse(result);
+    }
+
+    @Test
+    void checkCamelCaseUpAndLow() {
+        //GIVEN
+        String passwort = "aAAa";
+
+        //WHEN
+        boolean result = PasswortValidierer.checkCamelCase(passwort);
+
+        //THEN
+        assertTrue(result);
+    }
+
+    @Test
+    void checkCamelCaseV1_2Up() {
+        //GIVEN
+        String passwort = "AAAA";
+
+        //WHEN
+        boolean result = PasswortValidierer.checkCamelCaseV1_2(passwort);
+
+        //THEN
+        assertFalse(result);
+    }
+
+    @Test
+    void checkCamelCaseV1_2Low() {
+        //GIVEN
+        String passwort = "aaaa";
+
+        //WHEN
+        boolean result = PasswortValidierer.checkCamelCaseV1_2(passwort);
+
+        //THEN
+        assertFalse(result);
+    }
+
+    @Test
+    void checkCamelCaseV1_2UpAndLow() {
+        //GIVEN
+        String passwort = "aAAa";
+
+        //WHEN
+        boolean result = PasswortValidierer.checkCamelCaseV1_2(passwort);
+
+        //THEN
+        assertTrue(result);
     }
 
 }
