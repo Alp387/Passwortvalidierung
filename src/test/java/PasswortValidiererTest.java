@@ -50,4 +50,16 @@ class PasswortValidiererTest {
 
     }
 
+    @Test
+    void checkCamelCase() {
+        //GIVEN
+        String passwort = "AAAA";
+
+        //WHEN
+        boolean result = PasswortValidierer.checkCamelCase(passwort);
+
+        //THEN
+        assertFalse(result);
+    }
+
 }

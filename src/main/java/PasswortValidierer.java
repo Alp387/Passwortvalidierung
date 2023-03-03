@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class PasswortValidierer {
 
 
@@ -13,5 +15,14 @@ public class PasswortValidierer {
 
     }
 
-
+    public static boolean checkCamelCase(String passwort) {
+        if (passwort.equals(passwort.toUpperCase()) || passwort.equals(passwort.toLowerCase())) {
+        }
+        return false;
+    }
 }
+
+
+
+
+
