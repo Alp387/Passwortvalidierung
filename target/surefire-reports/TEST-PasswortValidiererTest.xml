@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PasswortValidiererTest" time="0.018" tests="22" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PasswortValidiererTest" time="0.019" tests="22" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="DE"/>
     <property name="sun.boot.library.path" value="/Users/robinschatzl/Library/Java/JavaVirtualMachines/openjdk-19.0.2/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/robinschatzl/Documents/MyFirstJavaApp/MyFirstGitHub/Passwortvalidierung/target/surefire/surefirebooter1542087720787693085.jar /Users/robinschatzl/Documents/MyFirstJavaApp/MyFirstGitHub/Passwortvalidierung/target/surefire 2023-03-03T15-45-54_548-jvmRun1 surefire4006684955336016993tmp surefire_012816431925291270490tmp"/>
+    <property name="sun.java.command" value="/Users/robinschatzl/Documents/MyFirstJavaApp/MyFirstGitHub/Passwortvalidierung/target/surefire/surefirebooter18373067691952649672.jar /Users/robinschatzl/Documents/MyFirstJavaApp/MyFirstGitHub/Passwortvalidierung/target/surefire 2023-03-03T18-57-35_868-jvmRun1 surefire12303745657766307645tmp surefire_015581788243705075113tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/robinschatzl/Documents/MyFirstJavaApp/MyFirstGitHub/Passwortvalidierung/target/test-classes:/Users/robinschatzl/Documents/MyFirstJavaApp/MyFirstGitHub/Passwortvalidierung/target/classes:/Users/robinschatzl/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar:/Users/robinschatzl/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/Users/robinschatzl/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/robinschatzl/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/Users/robinschatzl/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/robinschatzl/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/Users/robinschatzl/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar:/Users/robinschatzl/.m2/repository/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/robinschatzl/Documents/MyFirstJavaApp/MyFirstGitHub/Passwortvalidierung/target/surefire/surefirebooter1542087720787693085.jar"/>
+    <property name="surefire.real.class.path" value="/Users/robinschatzl/Documents/MyFirstJavaApp/MyFirstGitHub/Passwortvalidierung/target/surefire/surefirebooter18373067691952649672.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="19.0.2+7-44"/>
@@ -58,15 +58,15 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="checkCorrectPw1" classname="PasswortValidiererTest" time="0.008"/>
+  <testcase name="checkCorrectPw1" classname="PasswortValidiererTest" time="0.009"/>
   <testcase name="checkCamelCaseUpAndLow" classname="PasswortValidiererTest" time="0"/>
   <testcase name="checkCamelCaseLow" classname="PasswortValidiererTest" time="0"/>
   <testcase name="checkWrongPwToShortRS" classname="PasswortValidiererTest" time="0.001"/>
   <testcase name="checkCamelCaseV1_2Low" classname="PasswortValidiererTest" time="0"/>
-  <testcase name="checkWrongPwToLongRS" classname="PasswortValidiererTest" time="0.001"/>
+  <testcase name="checkWrongPwToLongRS" classname="PasswortValidiererTest" time="0"/>
   <testcase name="checkCamelCaseUp" classname="PasswortValidiererTest" time="0"/>
   <testcase name="stimmtPasswortLaengeJA" classname="PasswortValidiererTest" time="0"/>
-  <testcase name="checkWrongPwToWeakRS" classname="PasswortValidiererTest" time="0"/>
+  <testcase name="checkWrongPwToWeakRS" classname="PasswortValidiererTest" time="0.001"/>
   <testcase name="checkDigitOrNot_ifNoFalse" classname="PasswortValidiererTest" time="0"/>
   <testcase name="checkCamelCaseV1_2Up" classname="PasswortValidiererTest" time="0"/>
   <testcase name="checkDigitIrNotV2Test_WithDigitMusstBeTrue" classname="PasswortValidiererTest" time="0.001"/>
@@ -74,10 +74,10 @@
   <testcase name="checkWrongPwNoLowwerCaseRS" classname="PasswortValidiererTest" time="0"/>
   <testcase name="checkDigitIrNotV2Test_WithNoDigitMusstBeFalse" classname="PasswortValidiererTest" time="0"/>
   <testcase name="checkWrongPw1" classname="PasswortValidiererTest" time="0"/>
-  <testcase name="checkIfPwContainsBadString1" classname="PasswortValidiererTest" time="0"/>
-  <testcase name="checkIfPwContainsBadString2" classname="PasswortValidiererTest" time="0"/>
-  <testcase name="checkIfPwContainsBadString3" classname="PasswortValidiererTest" time="0.001"/>
+  <testcase name="checkIfPwContainsBadString1" classname="PasswortValidiererTest" time="0.001"/>
+  <testcase name="checkIfPwContainsBadString2" classname="PasswortValidiererTest" time="0.001"/>
+  <testcase name="checkIfPwContainsBadString3" classname="PasswortValidiererTest" time="0"/>
   <testcase name="checkWrongPwNoUpperCaseRS" classname="PasswortValidiererTest" time="0"/>
-  <testcase name="stimmtPasswortLaengeNEIN" classname="PasswortValidiererTest" time="0"/>
+  <testcase name="stimmtPasswortLaengeNEIN" classname="PasswortValidiererTest" time="0.001"/>
   <testcase name="checkCamelCaseV1_2UpAndLow" classname="PasswortValidiererTest" time="0"/>
 </testsuite>
