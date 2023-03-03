@@ -38,7 +38,7 @@ public class PasswortValidierer {
         return true;  //das else { return true; } können wir uns hier Sparen und return true direkt ausgeben.
     }
 
-    public static void testName(){   //Visualisierung und Erklärung von "camelCase
+    public static void testName(){   //Visualisierung und Erklärung von "camelCase"
         String name = "Hallo";
         System.out.println(name);
         System.out.println("ist " + name + " = " + name.toUpperCase());
