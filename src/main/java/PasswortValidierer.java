@@ -58,7 +58,7 @@ public static boolean istPwKorrekt(String passwort){
     public static boolean checkBadPw(String passwort) {
         // Methode equalsIgnoreCase(String) überprüft String Parameter unabhängig von Groß- und Kleinschreibung
 
-        if (passwort.equalsIgnoreCase("passwort") || passwort.equalsIgnoreCase("password") || passwort.equalsIgnoreCase("12345678"))  {
+        if (passwort.equalsIgnoreCase("passwort") || passwort.equalsIgnoreCase("password") || passwort.equalsIgnoreCase("12345678") || passwort.equalsIgnoreCase("Passwort123"))  {
             return true;
         } else {
             return false;
