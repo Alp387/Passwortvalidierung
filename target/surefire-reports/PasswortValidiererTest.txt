@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: PasswortValidiererTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in PasswortValidiererTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in PasswortValidiererTest

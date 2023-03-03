@@ -1,6 +1,11 @@
 import javax.swing.*;
+import java.sql.SQLOutput;
 
 public class PasswortValidierer {
+
+    public static void main(String[] args) {
+        testName();
+    }
 
 
     public static boolean pwLengthCheck(String passwort) {
@@ -32,9 +37,15 @@ public class PasswortValidierer {
         }
         return true;  //das else { return true; } können wir uns hier Sparen und return true direkt ausgeben.
     }
+
+    public static void testName(){   //Visualisierung und Erklärung von "camelCase
+        String name = "Hallo";
+        System.out.println(name);
+        System.out.println("ist " + name + " = " + name.toUpperCase());
+        System.out.println("ist " + name + " = " + name.toLowerCase());
+    }
+
 }
-
-
 
 
 
