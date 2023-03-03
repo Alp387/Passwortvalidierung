@@ -172,4 +172,24 @@ class PasswortValidiererTest {
         assertFalse(result);
     }
 
+    @Test
+    void checkCorrectPw1(){
+        //GIVEN
+        String passwort = "AA123xxasdF5";
+        //WHEN
+        boolean result = PasswortValidierer.istPwKorrekt(passwort);
+        //THEN
+        assertTrue(result);
+
+    }
+    @Test
+    void checkWrongPw1(){
+//GIVEN
+        String passwort = "AAxxffdfdfdffasd";
+        //WHEN
+        boolean result = PasswortValidierer.istPwKorrekt(passwort);
+        //THEN
+        assertFalse(result);
+    }
+
 }
