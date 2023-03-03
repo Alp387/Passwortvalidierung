@@ -29,22 +29,33 @@ public class PasswortValidierer {
     }
 
     public static boolean checkCamelCaseV1_2(String passwort) {
-        if (passwort.equals((passwort.toUpperCase()))){
+        if (passwort.equals((passwort.toUpperCase()))) {
             return false;
         }
-        if (passwort.equals(passwort.toLowerCase())){
+        if (passwort.equals(passwort.toLowerCase())) {
             return false;
         }
         return true;  //das else { return true; } können wir uns hier Sparen und return true direkt ausgeben.
     }
 
-    public static void testName(){   //Visualisierung und Erklärung von "camelCase"
+    public static void testName() {   //Visualisierung und Erklärung von "camelCase"
         String name = "Hallo";
         System.out.println(name);
         System.out.println("ist " + name + " = " + name.toUpperCase());
         System.out.println("ist " + name + " = " + name.toLowerCase());
     }
 
+
+    public static boolean checkBadPw(String passwort) {
+        // Methode equalsIgnoreCase(String) überprüft String Parameter unabhängig von Groß- und Kleinschreibung
+
+        if (passwort.equalsIgnoreCase("passwort") || passwort.equalsIgnoreCase("password") || passwort.equalsIgnoreCase("12345678"))  {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
 }
 
 

@@ -14,6 +14,7 @@ class PasswortValidiererTest {
         //THEN
         assertTrue(result);
     }
+
     @Test
     void stimmtPasswortLaengeNEIN() {
         //GIVEN
@@ -122,6 +123,33 @@ class PasswortValidiererTest {
         assertTrue(result);
     }
 
+    @Test
+    void checkIfPwContainsBadString1() {
+        //GIVEN
+        String passwort = "passwort";
+        //WHEN
+        boolean result = PasswortValidierer.checkBadPw(passwort);
+        //THEN
+        assertTrue(result);
+    }
 
+    @Test
+    void checkIfPwContainsBadString2() {
+        //GIVEN
+        String passwort = "password";
+        //WHEN
+        boolean result = PasswortValidierer.checkBadPw(passwort);
+        //THEN
+        assertTrue(result);
+    }
+    @Test
+    void checkIfPwContainsBadString3() {
+        //GIVEN
+        String passwort = "12345678";
+        //WHEN
+        boolean result = PasswortValidierer.checkBadPw(passwort);
+        //THEN
+        assertTrue(result);
+    }
 
 }
