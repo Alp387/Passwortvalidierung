@@ -9,7 +9,7 @@ public class PasswortValidierer {
 
     public static boolean checkIfPwIsCorrect(String passwort) {
         return pwLengthCheck(passwort) && checkDigitOrNot(passwort)
-                && checkCamelCase(passwort) && !checkBadPw(passwort);
+                && checkPwUpperCase(passwort) && checkPwLowerCase(passwort) && !checkBadPw(passwort);
     }
 
 
@@ -31,25 +31,24 @@ public class PasswortValidierer {
         } return false;
     }
 
-    public static boolean checkCamelCase(String passwort) {
-        if (passwort.equals(passwort.toUpperCase()) || passwort.equals(passwort.toLowerCase())) {
+    public static boolean checkPwUpperCase(String passwort) {
+        if (passwort.equals(passwort.toUpperCase())) {
             return false;
         }
-        return true; //hier kein else einfach un platz zu sparen
+        return true; //hier kein else einfach um platz zu sparen
 
     }
 
-    public static boolean checkCamelCaseV1_2(String passwort) {
-        if (passwort.equals((passwort.toUpperCase()))) {
-            return false;
-        }
+    public static boolean checkPwLowerCase(String passwort) {
         if (passwort.equals(passwort.toLowerCase())) {
             return false;
         }
-        return true;  //das else { return true; } können wir uns hier Sparen und return true direkt ausgeben.
+        return true; //hier kein else einfach um platz zu sparen
+
     }
 
-    public static void testName() {   //Visualisierung und Erklärung von "camelCase"
+
+    public static void testName() {   //Visualisierung und Erklärung von "checkPwLowerCase & Upper Case"
         String name = "Hallo";
         System.out.println(name);
         System.out.println("ist " + name + " = " + name.toUpperCase());
@@ -66,7 +65,9 @@ public class PasswortValidierer {
             return false;
         }
 
-    }
+    }  //Mit dieser Methode nicht praktikabel bei einer
+    // großen Anzahl von Wörtern mit einfachen Passwörtern.
+    // Sollte mit einem Array gemacht werden
 
     public static boolean checkPasswordContainsOnlyDigit(String password){
         return password.matches("^\\d+$");
