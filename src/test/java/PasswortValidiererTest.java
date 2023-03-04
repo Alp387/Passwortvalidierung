@@ -50,6 +50,54 @@ class PasswortValidiererTest {
         assertFalse(result);
 
     }
+    @Test
+    void checkDigitOrNot_ifYesTrueV2() {
+        //GIVEN
+        String passwort = "123HasanRockt";
+
+        //WHEN
+        boolean result = PasswortValidierer.checkDigitOrNotV2(passwort);
+
+        //THEN
+        assertTrue(result);
+    }
+
+    @Test
+    void checkDigitOrNot_ifNoFalseV2() {
+        //GIVEN
+        String passwort = "XinRocktYeah";
+
+        //WHEN
+        boolean result = PasswortValidierer.checkDigitOrNotV2(passwort);
+
+        //THEN
+        assertFalse(result);
+
+    }
+    @Test
+    void checkDigitOrNot_ifYesTrueV3() {
+        //GIVEN
+        String passwort = "123HasanRockt";
+
+        //WHEN
+        boolean result = PasswortValidierer.checkDigitOrNotV3(passwort);
+
+        //THEN
+        assertTrue(result);
+    }
+
+    @Test
+    void checkDigitOrNot_ifNoFalseV3() {
+        //GIVEN
+        String passwort = "XinRocktYeah";
+
+        //WHEN
+        boolean result = PasswortValidierer.checkDigitOrNotV3(passwort);
+
+        //THEN
+        assertFalse(result);
+
+    }
 
     @Test
     void checkPwUpperCaseWithOnlyUpperCase() {
@@ -126,6 +174,35 @@ class PasswortValidiererTest {
         String passwort = "12345678";
         //WHEN
         boolean result = PasswortValidierer.checkBadPw(passwort);
+        //THEN
+        assertTrue(result);
+    }
+
+    @Test
+    void checkIfPwContainsBadString1V2() {
+        //GIVEN
+        String passwort = "passwort";
+        //WHEN
+        boolean result = PasswortValidierer.checkBadPwV2(passwort);
+        //THEN
+        assertTrue(result);
+    }
+
+    @Test
+    void checkIfPwContainsBadString2V2() {
+        //GIVEN
+        String passwort = "password";
+        //WHEN
+        boolean result = PasswortValidierer.checkBadPwV2(passwort);
+        //THEN
+        assertTrue(result);
+    }
+    @Test
+    void checkIfPwContainsBadString3V2() {
+        //GIVEN
+        String passwort = "12345678";
+        //WHEN
+        boolean result = PasswortValidierer.checkBadPwV2(passwort);
         //THEN
         assertTrue(result);
     }
@@ -220,5 +297,24 @@ class PasswortValidiererTest {
         assertFalse(result);
     }
 
+    @Test
+    void checkPasswordContainsOnlyDigitV2TestOnlyDigit() {
+        //GIVEN
+        String passwort = "1234567890";
+        //WHEN
+        boolean result = PasswortValidierer.checkPasswordContainsOnlyDigitV2(passwort);
+        //THEN
+        assertFalse(result);
+    }
+
+    @Test
+    void checkPasswordContainsOnlyDigitV2TestCharAndDigit() {
+        //GIVEN
+        String passwort = "1234567890Ü";
+        //WHEN
+        boolean result = PasswortValidierer.checkPasswordContainsOnlyDigitV2(passwort);
+        //THEN
+        assertTrue(result);
+    }
 }
 
