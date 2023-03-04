@@ -177,7 +177,7 @@ class PasswortValidiererTest {
         //GIVEN
         String passwort = "AA123xxasdF5";
         //WHEN
-        boolean result = PasswortValidierer.istPwKorrekt(passwort);
+        boolean result = PasswortValidierer.checkIfPwIsCorrect(passwort);
         //THEN
         assertTrue(result);
 
@@ -187,7 +187,7 @@ class PasswortValidiererTest {
         //GIVEN
         String passwort = "AAxxffdfdfdffasd";
         //WHEN
-        boolean result = PasswortValidierer.istPwKorrekt(passwort);
+        boolean result = PasswortValidierer.checkIfPwIsCorrect(passwort);
         //THEN
         assertFalse(result);
     }
@@ -197,7 +197,7 @@ class PasswortValidiererTest {
         //GIVEN
         String passwort = "123564654asddad";
         //WHEN
-        boolean result = PasswortValidierer.istPwKorrekt(passwort);
+        boolean result = PasswortValidierer.checkIfPwIsCorrect(passwort);
         //THEN
         assertFalse(result);
     }
@@ -207,7 +207,7 @@ class PasswortValidiererTest {
         //GIVEN
         String passwort = "154SDA1354§$";
         //WHEN
-        boolean result = PasswortValidierer.istPwKorrekt(passwort);
+        boolean result = PasswortValidierer.checkIfPwIsCorrect(passwort);
         //THEN
         assertFalse(result);
     }
@@ -217,7 +217,7 @@ class PasswortValidiererTest {
         //GIVEN
         String passwort = "Aa12$";
         //WHEN
-        boolean result = PasswortValidierer.istPwKorrekt(passwort);
+        boolean result = PasswortValidierer.checkIfPwIsCorrect(passwort);
         //THEN
         assertFalse(result);
     }
@@ -227,7 +227,7 @@ class PasswortValidiererTest {
         //GIVEN
         String passwort = "Aa1234567890ASlasdljhdföjlhasdöjlhasdöjlhÖLJHDÖjÖJLHdÖJASDJHASDjlöhäafkäjasasdklasdjkl3495873945uiohdsfjhdsfh789345893touhjdsfjöhdsfjpöhdsfhjdsfjohfsdjhdsfjöhsdfjödfhsjöfhhj4p789z543uhdsfsd";
         //WHEN
-        boolean result = PasswortValidierer.istPwKorrekt(passwort);
+        boolean result = PasswortValidierer.checkIfPwIsCorrect(passwort);
         //THEN
         assertFalse(result);
     }
@@ -237,11 +237,10 @@ class PasswortValidiererTest {
         //GIVEN
         String passwort = "Passwort123";
         //WHEN
-        boolean result = PasswortValidierer.istPwKorrekt(passwort);
+        boolean result = PasswortValidierer.checkIfPwIsCorrect(passwort);
         //THEN
         assertFalse(result);
     }
 
 }
 
-//New

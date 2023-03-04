@@ -7,7 +7,7 @@ public class PasswortValidierer {
         testName();
     }
 
-    public static boolean istPwKorrekt(String passwort) {
+    public static boolean checkIfPwIsCorrect(String passwort) {
         return pwLengthCheck(passwort) && checkDigitOrNot(passwort)
                 && checkCamelCase(passwort) && !checkBadPw(passwort);
     }
@@ -75,6 +75,8 @@ public class PasswortValidierer {
 
 
 }
+
+
 
 
 
