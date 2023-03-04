@@ -52,76 +52,54 @@ class PasswortValidiererTest {
     }
 
     @Test
-    void checkCamelCaseUp() {
+    void checkPwUpperCaseWithOnlyUpperCase() {
         //GIVEN
         String passwort = "AAAA";
 
         //WHEN
-        boolean result = PasswortValidierer.checkCamelCase(passwort);
+        boolean result = PasswortValidierer.checkPwUpperCase(passwort);
 
         //THEN
         assertFalse(result);
     }
 
     @Test
-    void checkCamelCaseLow() {
-        //GIVEN
-        String passwort = "aaaa";
-
-        //WHEN
-        boolean result = PasswortValidierer.checkCamelCase(passwort);
-
-        //THEN
-        assertFalse(result);
-    }
-
-    @Test
-    void checkCamelCaseUpAndLow() {
+    void checkPwUpperCaseWithUpperAndLowerCase() {
         //GIVEN
         String passwort = "aAAa";
 
         //WHEN
-        boolean result = PasswortValidierer.checkCamelCase(passwort);
+        boolean result = PasswortValidierer.checkPwUpperCase(passwort);
 
         //THEN
         assertTrue(result);
     }
 
     @Test
-    void checkCamelCaseV1_2Up() {
-        //GIVEN
-        String passwort = "AAAA";
-
-        //WHEN
-        boolean result = PasswortValidierer.checkCamelCaseV1_2(passwort);
-
-        //THEN
-        assertFalse(result);
-    }
-
-    @Test
-    void checkCamelCaseV1_2Low() {
+    void checkPwLowerCaseWithOnlyLowerCase() {
         //GIVEN
         String passwort = "aaaa";
 
         //WHEN
-        boolean result = PasswortValidierer.checkCamelCaseV1_2(passwort);
+        boolean result = PasswortValidierer.checkPwLowerCase(passwort);
 
         //THEN
         assertFalse(result);
     }
 
     @Test
-    void checkCamelCaseV1_2UpAndLow() {
+    void checkPwLowerCaseWithUpperAndLowerCase() {
         //GIVEN
         String passwort = "aAAa";
 
         //WHEN
-        boolean result = PasswortValidierer.checkCamelCaseV1_2(passwort);
+        boolean result = PasswortValidierer.checkPwLowerCase(passwort);
 
         //THEN
         assertTrue(result);
     }
+
+
 
     @Test
     void checkIfPwContainsBadString1() {
