@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74c35cf4-4de1-400b-aad9-3b1a0f7965e9" name="Changes" comment="" />
+    <list default="true" id="74c35cf4-4de1-400b-aad9-3b1a0f7965e9" name="Changes" comment="Merge Test!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +38,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2MYCQA9A4YOlwzPuV9g24XxHlMd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -124,7 +125,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677935109767</updated>
       <workItem from="1677935111148" duration="1959000" />
-      <workItem from="1677937137569" duration="453000" />
+      <workItem from="1677937137569" duration="1123000" />
     </task>
     <task id="LOCAL-00001" summary="Ubuntu Test Robin">
       <created>1677935242377</created>
@@ -140,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677936719907</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge Test!">
+      <created>1677937971864</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677937971864</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +168,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ubuntu Test Robin" />
     <MESSAGE value="Password test changed from &quot;camelCase&quot; to &quot;checkPwUpperCase&quot; and &quot;checkPwLowerCase&quot; and split into two methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Password test changed from &quot;camelCase&quot; to &quot;checkPwUpperCase&quot; and &quot;checkPwLowerCase&quot; and split into two methods" />
+    <MESSAGE value="Merge Test!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge Test!" />
   </component>
 </project>
